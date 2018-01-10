@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/cooleric/curator"
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/cooleric/go-zookeeper/zk"
 )
 
 const LockPrefix = "lock-"

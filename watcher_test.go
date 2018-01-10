@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/cooleric/go-zookeeper/zk"
 	"github.com/stretchr/testify/assert"
 )
 

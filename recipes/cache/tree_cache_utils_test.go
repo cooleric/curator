@@ -13,7 +13,7 @@ import (
 	"unsafe"
 
 	"github.com/cooleric/curator"
-	"github.com/samuel/go-zookeeper/zk"
+	"github.com/cooleric/go-zookeeper/zk"
 )
 
 // this file contains utils for testing of TreeCache.
