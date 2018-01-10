@@ -129,6 +129,13 @@ func (h *handleHolder) closeAndReset() error {
 }
 
 func (h *handleHolder) internalClose() error {
+	// 临时用于捕捉“panic: close of closed channel”异常
+	defer func() {
+		if err := recover(); err != nil {
+			log.Fatalln(err)
+		}
+	}()
+
 	if h.Helper() != nil {
 		if conn, err := h.getZookeeperConnection(); err != nil {
 			return err
