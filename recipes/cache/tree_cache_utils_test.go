@@ -12,7 +12,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/curator-go/curator"
+	"github.com/cooleric/curator"
 	"github.com/samuel/go-zookeeper/zk"
 )
 
